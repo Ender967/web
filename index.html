@@ -1,1 +1,92 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>WebCat</title>
+     <link rel="stylesheet" type="text/css" href="./css/mdui.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/mdui.min.js"></script>
+  </head>
+ <body class="mdui-appbar-with-toolbar">
+
+<div class="mdui-appbar-fixed">
+ <div class="mdui-color-indigo-a400 mdui-toolbar ">
+    <span class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#main-drawer', swipe: true}"><i class="mdui-icon material-icons">menu</i></span>
+    <a href="javascript:;" class="mdui-typo-title">服务器官网</a>
+  </div>
+</div>
+
+<div class="imgurl mdui-valign " style="height:470px">
+  <div class="mdui-typo mdui-center mdui-text-color-white" >
+    <div class="mdui-typo-headline mdui-text-center"><b>名称</b></div>
+    <p class="mdui-typo-subheading mdui-text-center">999MB 999次下载</p>
+
+<div class="mdui-row-xs-2">
+  <div class="mdui-col" id="button">
+    <button class="mdui-btn mdui-btn-block mdui-color-pink mdui-ripple">立即下载</button>
+  </div>
+  <div class="mdui-col" id="button">
+    <button class="mdui-btn mdui-btn-block mdui-color-pink mdui-ripple">加入QQ群</button>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+<footer class="mdui-color-grey-800">
+<div class="mdui-center mdui-text-center mdui-text-color-grey-500 mdui-p-t-2 mdui-p-b-3">Copyright ©2021 作者名 All Rights Reserved.</div> 
+
+</footer>
+
+
+ <div class="mdui-drawer" id="main-drawer">
+
+  <!-- 卡片头部，包含头像、标题、副标题 -->
+<div class="mdui-card mdui-shadow-0">
+  <div class="mdui-card-header">
+    <img class="mdui-card-header-avatar" src="avatar.jpg"/>
+    <div class="mdui-card-header-title">Title</div>
+    <div class="mdui-card-header-subtitle">Subtitle</div>
+  </div>
+    <button class="mdui-btn mdui-ripple mdui-float-right">action 1</button>
+    <button class="mdui-btn mdui-ripple mdui-float-right">action 2</button>
+  </div>
+
+ 
+ <div class="mdui-list">
+    <li class="mdui-subheader">分类</li>
+    <a class="mdui-list-item mdui-ripple mdui-list-item-active" href="./">
+      <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+      <div class="mdui-list-item-content">首页</div>
+      <i class="mdui-icon material-icons">chevron_right</i>
+    </a>
+    
+        <a class="mdui-list-item mdui-ripple" href="./">
+      <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
+      <div class="mdui-list-item-content">论坛</div>
+      <i class="mdui-icon material-icons">chevron_right</i>
+    </a>
+    
+
+    <ul class="mdui-list" mdui-collapse="{accordion: true}">
+  <li class="mdui-collapse-item mdui-collapse-item-open">
+    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+      <i class="mdui-list-item-icon mdui-icon material-icons">people</i>
+      <div class="mdui-list-item-content">友情链接</div>
+      <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+    </div>
+    <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+      <li class="mdui-list-item mdui-ripple">Overview</li>
+      <li class="mdui-list-item mdui-ripple">Language</li>
+      <li class="mdui-list-item mdui-ripple">Location</li>
+      <li class="mdui-list-item mdui-ripple">New vs Returning</li>
+    </ul>
+  </li>
+</ul>
+
+    
+ </div>
+</div>
+
+</html>
