@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
-    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+    <meta name="renderer" content="webkit" />
     <title>晨渊</title>
     <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
     <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
@@ -16,15 +16,33 @@
 </head>
 
 
+
+
 <div style="position: relative;overflow: hidden">
-    <mdui-top-app-bar scroll-behavior="elevate" scroll-target=".example-scroll-behavior-elevate">
-        <mdui-top-app-bar-title>晨渊</mdui-top-app-bar-title>
+    <mdui-top-app-bar variant="medium" scroll-behavior="shrink elevate" scroll-target=".example-label-large-slot">
+        <mdui-snackbar class="example-snackbar">咕咕咕...</mdui-snackbar>
+        <mdui-button-icon icon="menu" close-on-overlay-click class="example-drawer"></mdui-button-icon>
+        <script>
+            const snackbar = document.querySelector(".example-snackbar");
+            const openButton = snackbar.nextElementSibling;
+
+            openButton.addEventListener("click", () => snackbar.open = true);
+        </script>
+
+
+        <mdui-top-app-bar-title>
+            晨渊
+            <span slot="label-large">晨渊</span>
+        </mdui-top-app-bar-title>
         <div style="flex-grow: 1"></div>
         <mdui-button-icon icon="refresh" onclick="location.href = location.href"></mdui-button-icon>
         <mdui-button icon="chat" href="https://qm.qq.com/q/zuGMnMASsw">加入群聊</mdui-button>
     </mdui-top-app-bar>
 
-    <div class="example-scroll-behavior-elevate" style="overflow: auto;">
+    <div class="example-label-large-slot" style="height: auto;overflow: auto;">
+        <div style="height: auto"></div>
+
+
 
         <mdui-list>
             <mdui-list-subheader>服务器状态</mdui-list-subheader>
@@ -66,8 +84,7 @@
         </mdui-list>
 
         <mdui-divider></mdui-divider>
-
     </div>
 </div>
-</div>
+
 </html>
